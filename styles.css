@@ -1,0 +1,517 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: whitesmoke;
+}
+h1 {
+    font-family: serif;
+    letter-spacing: .5rem;
+    font-size: 5rem;
+}
+
+p { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+.body-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: serif;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: serif;
+    letter-spacing: .15rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container-hero {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-image: url("./assets/mountain.jpg");
+    flex-wrap: nowrap;
+    border-bottom: solid black 4px;
+ }
+
+ hr {
+    width: 90px;
+    border: solid black 2px;
+  }
+ 
+ .container-hero > div {
+    margin: 1rem;
+    padding: 1rem;
+ }
+ 
+.hero-img {
+    border-radius: 50%;
+    height: 15rem;
+}
+
+.container-resume {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    gap: 2rem;
+    row-gap: 0rem;
+    background-color: whitesmoke;
+    border-bottom: solid black 4px;
+}
+
+.container-portfolio .col {
+    margin-top: -1px;
+
+}
+
+.col {
+    background-color: #CBD3D7;
+    margin: 1rem;
+    padding: 2rem;
+    margin-bottom: 0rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.resume-title {
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.resume-img {
+    float: left;
+    height: 75px;
+    padding: 2rem;
+}
+
+.container-portfolio {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    gap: 2rem;
+    row-gap: 0rem;
+    background-color: whitesmoke;
+    border-bottom: solid black 4px;
+}
+
+.portfolio-title {
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.portfolio-img {
+    height: 150px;
+    padding: 2rem;
+    float: left;
+    border-radius: 2.75rem;
+}
+
+.portfolio-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    
+}
+
+.container-contact {
+    height:30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    gap: 2rem;
+    row-gap: 0rem;
+    background-color: whitesmoke;
+    
+    margin-bottom: 2rem;
+}
+
+.contact-title {
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.col-footer {
+    background-color: #CBD3D7;
+    margin: 1rem;
+    padding: 2rem;
+    margin-bottom: 0rem;
+    padding-top: 0;
+    margin-top: 0;
+    border-radius: .5rem;
+}
+
+.footer-img {
+    height: 2rem;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    float: left;
+}
+
+.col-footer > * {
+    text-align: left;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1475px) {
+    h1 {
+        letter-spacing: .4rem;
+        font-size: 4rem;
+    }
+    
+    p { 
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    .body-p {
+        font-size: 1rem;
+    }
+    
+    .portfolio-p {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+    
+    h2 {
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+    }
+    
+    h3 {
+        letter-spacing: .175rem;
+        font-size: 1.75rem;
+        padding-left: 1rem;
+        padding-bottom: .5rem;
+    }
+    
+    .container-hero {
+        height: 90vh;
+        border-bottom: solid black 2px;
+     }
+    
+    hr {
+        width: 75px;
+        border: solid black 2px;
+     }
+     
+    .hero-img {
+        height: 18rem;
+    }
+
+    .container-resume {
+        height: 125vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr;
+        gap: 2rem;
+    }
+
+    .col {
+        border-radius: .5rem;
+    }
+    
+    .resume-title {
+        grid-column: span 1;
+        margin-top: 2rem;
+    }
+    
+    .resume-img {
+        height: 75px;
+        padding: 3em;
+    }
+
+    .container-portfolio {
+        height: 125vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr;
+        gap: 2rem;
+    }
+    
+    .portfolio-title {
+        grid-column: span 1;
+        margin-top: 2rem;
+    }
+    
+    
+    .portfolio-img {
+        height: 100px;
+        padding: 2rem;
+
+    }
+
+    .container-contact {
+        height:40vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 2fr;
+        gap: 2rem;
+        row-gap: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-title {
+        grid-column: span 3;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .col-footer {
+        margin: 1rem;
+        margin-bottom: 0rem;
+        padding: 0rem;
+        border-radius: .5rem;
+    }
+    
+    .col-footer > * {
+        margin-top: 0rem;
+        display: block;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .footer-img {
+        height: 5rem;
+        padding: 3rem;
+        padding-bottom: 0rem;
+        float: none;
+        margin: 0rem;
+
+    }
+    .footer-txt {
+        font-size: 1rem;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        margin-right: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    h1 {
+        letter-spacing: .3rem;
+        font-size: 3rem;
+    }
+    
+    p { 
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    .body-p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    h2 {
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+    }
+    
+    h3 {
+        letter-spacing: .15rem;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-bottom: .5rem;
+    }
+    
+    .container-hero {
+        height: 100vh;
+     }
+    
+    hr {
+        width: 50px;
+        border: solid black 2px;
+     }
+     
+    .hero-img {
+        height: 20rem;
+    }
+
+    .container-resume {
+        height: 150vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr;
+        gap: 0rem;
+    }
+    
+    .col {
+        border-radius: .5rem;
+    }
+
+    .resume-title {
+        grid-column: span 1;
+        margin-top: 3rem;
+    }
+    
+    .resume-img {
+        height: 50px;
+        padding: 2rem;
+    }
+
+    .container-portfolio {
+        height: 125vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr;
+        gap: 1rem;
+    }
+    
+    .portfolio-title {
+        grid-column: span 1;
+        margin-top: 3rem;
+    }
+    
+    
+    .portfolio-img {
+        height: 100px;
+        padding: 2rem;
+    }
+
+    .container-contact {
+        height:40vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr;
+        gap: 0rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-title {
+        grid-column: span 1;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .col-footer {
+        margin: 1rem;
+        margin-bottom: 0rem;
+        padding: 0rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .col-footer > * {
+        margin-top: 0rem;
+        display: block;
+        padding-right: 2rem;
+        margin-left: 0rem;
+    }
+
+    .footer-img {
+        height: 5rem;
+        padding: 3rem;
+        padding-bottom: 0rem;
+        float: none;
+        margin: 0rem;
+
+    }
+    .footer-txt {
+        font-size: 1rem;
+    }
+
+} 
+    
+
+
+@media (max-width: 425px) {
+    h1 {
+        letter-spacing: .2rem;
+        font-size: 2rem;
+    }
+    
+    p { 
+        font-size: 1rem;
+    }
+    
+    .body-p {
+        font-size: .75rem;
+    }
+
+    .portfolio-p {
+        font-size: .75rem;
+    
+    }
+
+    h2 {
+        letter-spacing: 0.15rem;
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        letter-spacing: .1rem;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-bottom: .5rem;
+    }
+
+    .footer-txt {
+        font-size: .75rem;
+        text-align: left;
+        margin-right: 0;
+        
+    }
+
+    .portfolio-img {
+        height: 75px;
+        padding: 2rem;
+    }
+
+    .hero-img {
+        height: 10rem;
+    }
+
+    .container-hero {
+        height: 75vh;
+     }
+
+     .footer-img {
+        height: 3rem;
+    }
+}
