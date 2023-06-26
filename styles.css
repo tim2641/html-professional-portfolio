@@ -375,7 +375,7 @@ h3 {
     }
 
     .container-resume {
-        height: 150vh;
+        height: 160vh;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 2fr 2fr 2fr;
         gap: 0rem;
